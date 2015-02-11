@@ -24,15 +24,15 @@ $(document).ready(function() {
     var userValue = throwArray.indexOf(userThrow);
 
     var outcome = (userValue - computerValue) % 5;
-    if (outcome === -3) { outcome = 2 };
-    console.log(outcome);
+    if (outcome === -3) {
+      outcome = 2;
+      }
     var userWins;
     var imageSource;
 
     var outcomeArray = [computerThrow, userThrow];
 
     var outcomeCommentary;
-    console.log(outcomeArray);
 
     if (($.inArray('rock', outcomeArray) > -1) && ($.inArray('spock', outcomeArray) > -1)) {
       outcomeCommentary = "Spock vaporizes rock!";
